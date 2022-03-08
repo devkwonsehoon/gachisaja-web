@@ -1,0 +1,10 @@
+@media screen and (max-width: 400px) {
+  #first,
+  #sec,
+  #third,
+  #four,
+  #video,
+  #contact {
+    width: 111%;
+  }
+}
