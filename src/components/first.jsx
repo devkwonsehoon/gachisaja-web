@@ -13,13 +13,13 @@ export const First = (props) => {
               <div className="row">
                 <div className="col-xs-6 col-md-6 menu pull-right">
                   <Link to="contact" spy={true} smooth={true}>
-                    <a href="#">
+                    <a href="#!">
                       <h3>베타 서비스 알림 신청</h3>
                     </a>
                   </Link>
                 </div>
                 <div className="col-xs-6 col-md-6 menu pull-right">
-                  <a href="">
+                  <a href="#!">
                     <h3>회사 소개</h3>
                   </a>
                 </div>
