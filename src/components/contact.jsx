@@ -1,5 +1,4 @@
 import { useState } from "react";
-import * as EmailValidator from "email-validator";
 import validator from "validator";
 
 const initialState = {
