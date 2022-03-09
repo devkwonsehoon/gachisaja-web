@@ -373,6 +373,12 @@ header .down-img {
   font-size: 15px;
   line-height: 30px;
 }
+.success-feedback {
+  font-size: 0px;
+}
+.done {
+  font-size: 15px;
+}
 .fail {
   font-family: "Spoqa Han Sans Neo" !important;
   color: #e9484c;

@@ -1,30 +1,47 @@
-export const Contact = (props) => {
-  (function () {
-    window.addEventListener(
-      "load",
-      function () {
-        var form = document.getElementById("needs-validation");
-        form.addEventListener(
-          "submit",
-          function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault();
-              event.stopPropagation();
-              form.classList.add("was-validated");
-            } else {
-              event.preventDefault();
-              event.stopPropagation();
-              form.classList.add("was-validated");
-            }
+import { useState } from "react";
+import * as EmailValidator from "email-validator";
+import validator from "validator";
 
-            // 서버 연동 처리
-          },
-          false
-        );
-      },
-      false
-    );
-  })();
+const initialState = {
+  email: "",
+};
+export const Contact = (props) => {
+  const form = document.getElementById("needs-validation");
+  const msg = document.getElementById("msg");
+  let change = false;
+  const [{ email }, setState] = useState(initialState);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setState((prevState) => ({ ...prevState, [name]: value }));
+
+    if (email !== "") {
+      change = true;
+      if (!validator.isEmail(email)) {
+        form.classList.add("was-validated");
+        clearState();
+      } else {
+        if (form.className.includes("was-validated"))
+          form.classList.remove("was-validated");
+      }
+    }
+    if (change)
+      if (msg.className.includes("done")) msg.classList.remove("done");
+  };
+
+  const clearState = () => setState({ ...initialState });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validator.isEmail(email)) {
+      clearState();
+    } else {
+      // TODO. 이메일 통신
+      msg.classList.add("done");
+      clearState();
+    }
+  };
 
   return (
     <div>
@@ -35,18 +52,25 @@ export const Contact = (props) => {
             <h3>메일을 적어주시면 서비스 출시 알림 메일을 보내드릴게요.</h3>
           </div>
 
-          <form name="sentMessage" id="needs-validation" noValidate>
+          <form
+            name="sentMessage"
+            id="needs-validation"
+            noValidate
+            onSubmit={handleSubmit}
+            autoComplete="off">
             <div className="row">
               <div className="col-md-12 d-flex justify-content-center forms">
                 <div className="form-group">
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="메일 주소를 입력해주세요."
                     className="form-control"
+                    onChange={handleChange}
                     required
                   />
-                  <div class="success valid-feedback">
+                  <div id="msg" class="success success-feedback">
                     감사합니다! 해당 이메일로 서비스 출시 알림 메일을
                     보내드릴게요.
                   </div>
