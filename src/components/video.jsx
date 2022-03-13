@@ -11,7 +11,6 @@ export const Video = () => {
           }
           width="100%" // 플레이어 크기 (가로)
           height="100%" // 플레이어 크기 (세로)
-          playsInline
           playing={true} // 자동 재생 on
           loop={true}
           muted={true} // 자동 재생 on
