@@ -18,7 +18,7 @@ export const Third = (props) => {
         <div className="row align-items-center">
           <div className="col-lg-7 col-md-12 col-12">
             <div className="hero-image" data-aos="fade-up">
-              <img src="img/view/Group 159.svg" alt="#" />
+              <img src="img/view/Group 159.png" alt="#" />
             </div>
           </div>
           <div className="col-lg-5 col-md-12 col-12">

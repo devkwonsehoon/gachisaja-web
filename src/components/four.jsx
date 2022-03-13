@@ -32,7 +32,7 @@ export const Four = (props) => {
           </div>
           <div className="col-lg-7 col-md-12 col-12">
             <div className="hero-image" data-aos="fade-up">
-              <img src="img/view/Group 159.svg" alt="#" />
+              <img src="img/view/Group 159.png" alt="#" />
             </div>
           </div>
         </div>

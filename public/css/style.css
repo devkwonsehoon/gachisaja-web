@@ -992,6 +992,7 @@ hr {
   }
   #header a {
     padding: 1rem !important;
+    margin-right: 5px !important;
   }
 }
 
@@ -1303,7 +1304,6 @@ hr {
 }
 @media (max-width: 767px) {
   .first-area .first-content {
-    padding: 0 10px;
     text-align: center;
   }
   .first-area .first-content h1 {
@@ -1500,7 +1500,6 @@ hr {
 }
 @media (max-width: 767px) {
   .sec-area .sec-content {
-    padding: 0 10px;
     text-align: center;
   }
   .sec-area .sec-content h1 {
@@ -1686,7 +1685,6 @@ hr {
 }
 @media (max-width: 767px) {
   .third-area .third-content {
-    padding: 0 10px;
     text-align: center;
   }
 }
@@ -1872,7 +1870,6 @@ hr {
 }
 @media (max-width: 767px) {
   .four-area .four-content {
-    padding: 0 10px;
     text-align: center;
   }
   .four-area .four-content h1 {
