@@ -57,8 +57,8 @@ export const Contact = (props) => {
             noValidate
             onSubmit={handleSubmit}
             autoComplete="off">
-            <div className="row">
-              <div className="col-md-12 d-flex justify-content-center forms">
+            <div className="col-lg-6 col-md-12 col-12 d-flex m-auto justify-content-center">
+              <div className="row justify-content-center forms">
                 <div className="form-group">
                   <input
                     type="email"
@@ -77,8 +77,9 @@ export const Contact = (props) => {
                     유효한 이메일을 입력해주세요.
                   </div>
                 </div>
-
-                <button type="submit" className="btn btn-custom btn-lg">
+                <button
+                  type="submit"
+                  className="col-3 btn btn-custom text-center">
                   신청하기
                 </button>
               </div>
@@ -87,86 +88,85 @@ export const Contact = (props) => {
         </div>
       </div>
       <hr></hr>
-      <div id="footer">
-        <div className="container text-left">
-          <div className="row foot-row">
-            {/* left */}
-            <div className="col-md-7">
-              <div className="row">
-                <div className="col-md-4">
-                  <h5>가치사자</h5>
-                  <ul>
-                    <li className="list-unstyled">
-                      <a href="#!">회사 소개</a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="#!">베타 서비스 출시 알림</a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="#!">제휴·협력</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="col-md-4">
-                  <h5>정책</h5>
-                  <ul>
-                    <li className="list-unstyled">
-                      <a href="#!">이용약관</a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="#!">개인정보 처리방침</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="col-md-4">
-                  <h5>App</h5>
-                  <ul>
-                    <li className="list-unstyled">
-                      <a href="#!">안드로이드</a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="#!">iOS</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="row footer-bottom">
-                <div className="col-md-7">
-                  <p>teamgachisaja@gmail.com</p>
-                </div>
+      <footer class="pt-4 my-md-5 pt-md-5">
+        <div class="row">
+          <div class="col-6 col-md">
+            <h5>가치사자</h5>
+            <ul>
+              <li className="list-unstyled">
+                <a className="list-text" href="#!">
+                  회사 소개
+                </a>
+              </li>
+              <li className="list-unstyled">
+                <a className="list-text" href="#!">
+                  베타 서비스 출시 알림
+                </a>
+              </li>
+              <li className="list-unstyled">
+                <a className="list-text" href="#!">
+                  제휴·협력
+                </a>
+              </li>
+            </ul>
+            <div className="row footer-bottom">
+              <div className="col-md-12 d-flex justify-content-center">
+                <p className="email-info">teamgachisaja@gmail.com</p>
               </div>
             </div>
+          </div>
+          <div class="col-6 col-md">
+            <h5>정책</h5>
+            <ul>
+              <li className="list-unstyled">
+                <a className="list-text" href="#!">
+                  이용약관
+                </a>
+              </li>
+              <li className="list-unstyled">
+                <a className="list-text" href="#!">
+                  개인정보 처리방침
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>App</h5>
+            <ul>
+              <li className="list-unstyled">
+                <a className="list-text" href="#!">
+                  안드로이드
+                </a>
+              </li>
+              <li className="list-unstyled">
+                <a className="list-text" href="#!">
+                  iOS
+                </a>
+              </li>
+            </ul>
+          </div>
 
-            {/* right */}
-            <div className="col-xs-5 col-md-5 footer-right">
-              <h5>문의</h5>
-              <ul>
-                <li className="list-unstyled">
-                  <p className="email">teamgachisaja@gmail.com</p>
-                </li>
-                <li className="list-unstyled">
-                  <a href="#!">
-                    <img
-                      src="img/instagram.png"
-                      className="footer-img"
-                      alt=""
-                    />{" "}
-                  </a>
-                </li>
-              </ul>
+          <div class="col-12 col-md">
+            <h5>문의</h5>
+            <ul>
+              <li className="list-unstyled">
+                <p className="email">teamgachisaja@gmail.com</p>
+              </li>
+              <li className="list-unstyled">
+                <a className="list-text" href="#!">
+                  <img src="img/instagram.png" className="footer-img" alt="" />{" "}
+                </a>
+              </li>
+            </ul>
 
-              <div className="row footer-bottom">
-                <div className="col-md-6 d-flex justify-content-center">
-                  <p>&copy; {new Date().getFullYear()} Gachisaja Inc.</p>
-                </div>
+            <div className="row footer-bottom">
+              <div className="col-md-12 d-flex justify-content-center align-items-end">
+                <p>&copy; {new Date().getFullYear()} Gachisaja Inc.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   );
 };

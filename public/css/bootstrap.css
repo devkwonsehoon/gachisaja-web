@@ -180,15 +180,18 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #000000;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  font-family: "Spoqa Han Sans Neo" !important;
+  font-size: 21px;
+  font-weight: 400;
 }
 
 a:hover {
   color: #0056b3;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {
@@ -586,21 +589,29 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
+  overflow-x: hidden;
+  overflow-y: hidden;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 300px) {
   .container {
-    max-width: 540px;
+    max-width: 400px;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 500px) {
+  .container {
+    max-width: 500px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 736px;
   }
 }
 
@@ -3156,7 +3167,7 @@ input[type="button"].btn-block {
 }
 
 .collapse:not(.show) {
-  display: none;
+  display: inline-block;
 }
 
 .collapsing {

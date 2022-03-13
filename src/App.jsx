@@ -1,3 +1,4 @@
+import { Header } from "./components/header";
 import { First } from "./components/first";
 import { Video } from "./components/video";
 import { Sec } from "./components/sec";
@@ -15,6 +16,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 const App = () => {
   return (
     <div>
+      <Header />
       <First />
       <Video />
       <Sec />

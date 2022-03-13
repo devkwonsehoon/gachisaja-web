@@ -14,11 +14,11 @@ export const Four = (props) => {
   });
 
   return (
-    <div id="four">
+    <section id="home" className="four-area">
       <div className="container">
-        <div className="row">
-          <div className="col-xs-4 col-md-4 align-self-center">
-            <div className="about-text">
+        <div className="row align-items-center">
+          <div className="col-lg-5 col-md-12 col-12">
+            <div className="four-content">
               <h1>
                 이웃과 함께 소비해요 -
                 <br />
@@ -30,28 +30,13 @@ export const Four = (props) => {
               </h3>
             </div>
           </div>
-          <div className="col xs-8 col-md-8">
-            <div className="row justify-content-center">
-              <div data-aos="fade-up" className="">
-                {" "}
-                <img
-                  src="img/view/image 14.png"
-                  className="img-view"
-                  alt=""
-                />{" "}
-              </div>
-              <div data-aos="fade-up" className="down">
-                {" "}
-                <img
-                  src="img/view/image 13.png"
-                  className="img-view"
-                  alt=""
-                />{" "}
-              </div>
+          <div className="col-lg-7 col-md-12 col-12">
+            <div className="hero-image" data-aos="fade-up">
+              <img src="img/view/Group 159.svg" alt="#" />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
