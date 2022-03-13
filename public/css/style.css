@@ -1422,6 +1422,7 @@ hr {
     letter-spacing: -0.04em;
     margin-bottom: 10px;
     text-transform: capitalize;
+    white-space: nowrap;
   }
   .sec-area .sec-content h3 {
     font-family: "Spoqa Han Sans Neo" !important;
@@ -1429,6 +1430,7 @@ hr {
     font-size: 14px !important;
     line-height: 25px;
     color: #574c4c;
+    white-space: nowrap;
   }
 }
 
@@ -1615,6 +1617,7 @@ hr {
     letter-spacing: -0.04em;
     margin-bottom: 10px;
     text-transform: capitalize;
+    white-space: nowrap;
   }
   .third-area .third-content h3 {
     font-family: "Spoqa Han Sans Neo" !important;
@@ -1622,6 +1625,7 @@ hr {
     font-size: 14px !important;
     line-height: 25px;
     color: #574c4c;
+    white-space: nowrap;
   }
 }
 
@@ -1792,6 +1796,7 @@ hr {
     letter-spacing: -0.04em;
     margin-bottom: 10px;
     text-transform: capitalize;
+    white-space: nowrap;
   }
   .four-area .four-content h3 {
     font-family: "Spoqa Han Sans Neo" !important;
@@ -1799,6 +1804,7 @@ hr {
     font-size: 14px !important;
     line-height: 25px;
     color: #574c4c;
+    white-space: nowrap;
   }
 }
 
@@ -1992,6 +1998,7 @@ hr {
     line-height: 70px;
     letter-spacing: -0.04em;
     margin-bottom: 10px;
+    white-space: nowrap;
   }
   #contact h3 {
     color: #574c4c;
@@ -1999,6 +2006,7 @@ hr {
     font-weight: bold;
     font-size: 11px !important;
     line-height: 35px;
+    white-space: nowrap;
   }
   #contact input {
     color: #574c4c;
