@@ -1,7 +1,7 @@
 {
   "name": "gachisaja-page",
   "private": true,
-  "homepage": "https://devkwonsehoon.github.io/gachisaja-page",
+  "homepage": "https://devkwonsehoon.github.io/gachisaja-web",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
