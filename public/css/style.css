@@ -987,6 +987,9 @@ hr {
   }
 }
 @media (max-width: 767px) {
+  #header .img-brand {
+    width: 160px;
+  }
   #header h3 {
     font-size: 15px !important;
   }
@@ -1062,6 +1065,20 @@ hr {
   line-height: 30px;
   margin: 0 auto;
   margin-bottom: 10px;
+}
+@media only screen and (min-width: 2015px) {
+  .store-box {
+    width: 400px;
+  }
+  .lion-box {
+    top: -145px;
+    flex: 0 0 41.666667% !important;
+    max-width: 41.666667% !important;
+  }
+  .lion-left-text {
+    flex: 0 0 41.666667% !important;
+    max-width: 41.666667% !important;
+  }
 }
 @media only screen and (min-width: 1116px) and (max-width: 1352px) {
   .first-area {
@@ -1232,7 +1249,10 @@ hr {
     width: 250px;
   }
   .first-area .intro-lion {
-    display: none;
+    width: 75px !important;
+  }
+  .download {
+    margin-top: 40px;
   }
 }
 

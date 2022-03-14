@@ -12,7 +12,7 @@ export const First = (props) => {
               </h1>
 
               <div className="row align-items-start lion-text">
-                <div className="col-lg-7 col-md-12 col-12">
+                <div className="col-lg-7 col-md-12 col-12 lion-left-text">
                   <h3>
                     배달음식, 장보기, 인터넷 쇼핑 등<br />
                     같이 할 이웃이 필요할 때, 언제든지
