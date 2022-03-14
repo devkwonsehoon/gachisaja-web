@@ -1255,7 +1255,7 @@ hr {
     margin-top: 40px;
   }
   .lion-box {
-    top: 20px;
+    top: 20px !important;
   }
 }
 
