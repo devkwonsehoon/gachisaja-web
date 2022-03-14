@@ -1106,7 +1106,7 @@ hr {
     margin: 0 auto;
   }
   .lion-box {
-    top: -20px;
+    top: -70px;
   }
   .intro-lion {
     width: 188px;
@@ -1253,6 +1253,9 @@ hr {
   }
   .download {
     margin-top: 40px;
+  }
+  .lion-box {
+    top: 20px;
   }
 }
 
