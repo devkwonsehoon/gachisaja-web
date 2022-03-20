@@ -1372,6 +1372,9 @@ hr {
   line-height: 35px;
   color: #574c4c;
 }
+.sec-area .hero-image img {
+  width: 700px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .sec-area .sec-content h1 {
     font-family: "yg-jalnan";
@@ -1400,7 +1403,7 @@ hr {
   }
 
   .sec-area .hero-image img {
-    width: 400px 396pxt;
+    width: 400px;
   }
 
   .sec-area .sec-content h1 {
@@ -1563,7 +1566,9 @@ hr {
   line-height: 35px;
   color: #574c4c;
 }
-
+.third-area .hero-image img {
+  width: 700px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .third-area .third-content h1 {
     font-family: "yg-jalnan";
@@ -1742,7 +1747,9 @@ hr {
   line-height: 35px;
   color: #574c4c;
 }
-
+.four-area .hero-image img {
+  width: 700px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .four-area .four-content h1 {
     font-family: "yg-jalnan";
