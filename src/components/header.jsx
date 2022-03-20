@@ -4,7 +4,7 @@ export const Header = (props) => {
   return (
     <div
       id="header"
-      className="d-flex flex-column flex-md-row align-items-center p-3 px-md-5
+      className="d-flex flex-column flex-md-row align-items-center p-3 px-md-5 
     ">
       <img src="img/brand.png" className="my-0 mr-md-auto img-brand" alt="" />{" "}
       <nav className="my-2 my-md-0 mr-md-3 nav-bar">

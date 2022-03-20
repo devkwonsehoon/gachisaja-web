@@ -988,7 +988,8 @@ hr {
 }
 @media (max-width: 767px) {
   #header .img-brand {
-    width: 160px;
+    width: 140px;
+    align-items: start !important;
   }
   #header h3 {
     font-size: 15px !important;
@@ -998,11 +999,9 @@ hr {
     margin-right: 5px !important;
   }
 }
-
-/* video Section */
 .player-wrapper {
   position: relative;
-  padding-top: 56.25%;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
 }
 
 .react-player {
@@ -2031,7 +2030,7 @@ hr {
     font-size: 11px !important;
     border: 1px solid #edbb3c;
     border-radius: 7px;
-    width: 300px;
+    width: 280px;
     height: 35px;
     float: left;
   }
