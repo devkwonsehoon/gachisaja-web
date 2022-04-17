@@ -20,12 +20,10 @@ export const Contact = (props) => {
         form.classList.add("was-validated");
         clearState();
       } else {
-        if (form.className.includes("was-validated"))
-          form.classList.remove("was-validated");
+        if (form.className.includes("was-validated")) form.classList.remove("was-validated");
       }
     }
-    if (change)
-      if (msg.className.includes("done")) msg.classList.remove("done");
+    if (change) if (msg.className.includes("done")) msg.classList.remove("done");
   };
 
   const clearState = () => setState({ ...initialState });
@@ -52,6 +50,8 @@ export const Contact = (props) => {
           </div>
 
           <form
+            action="https://formspree.io/f/mgednpdr"
+            method="POST"
             name="sentMessage"
             id="needs-validation"
             noValidate
@@ -70,16 +70,11 @@ export const Contact = (props) => {
                     required
                   />
                   <div id="msg" class="success success-feedback">
-                    감사합니다! 해당 이메일로 서비스 출시 알림 메일을
-                    보내드릴게요.
+                    감사합니다! 해당 이메일로 서비스 출시 알림 메일을 보내드릴게요.
                   </div>
-                  <div class="fail invalid-feedback">
-                    유효한 이메일을 입력해주세요.
-                  </div>
+                  <div class="fail invalid-feedback">유효한 이메일을 입력해주세요.</div>
                 </div>
-                <button
-                  type="submit"
-                  className="col-3 btn btn-custom text-center">
+                <button type="submit" className="col-3 btn btn-custom text-center">
                   신청하기
                 </button>
               </div>
