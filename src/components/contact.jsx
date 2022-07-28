@@ -49,37 +49,11 @@ export const Contact = (props) => {
             <h3>메일을 적어주시면 서비스 출시 알림 메일을 보내드릴게요.</h3>
           </div>
 
-          <form
-            action="https://formspree.io/f/mgednpdr"
-            method="POST"
-            name="sentMessage"
-            id="needs-validation"
-            noValidate
-            onSubmit={handleSubmit}
-            autoComplete="off">
-            <div className="col-lg-6 col-md-12 col-12 d-flex m-auto justify-content-center">
-              <div className="row justify-content-center forms">
-                <div className="form-group">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="메일 주소를 입력해주세요."
-                    className="form-control"
-                    onChange={handleChange}
-                    required
-                  />
-                  <div id="msg" class="success success-feedback">
-                    감사합니다! 해당 이메일로 서비스 출시 알림 메일을 보내드릴게요.
-                  </div>
-                  <div class="fail invalid-feedback">유효한 이메일을 입력해주세요.</div>
-                </div>
-                <button type="submit" className="col-3 btn btn-custom text-center">
-                  신청하기
-                </button>
-              </div>
-            </div>
-          </form>
+          <button
+            type="submit"
+            className="col-lg-6 col-md-12 col-12 d-flex m-auto justify-content-center align-items-center btn btn-custom text-center">
+            <a href="https://forms.gle/gizBFKfAr2isPafx9">신청하기</a>
+          </button>
         </div>
       </div>
       <hr></hr>
@@ -129,12 +103,14 @@ export const Contact = (props) => {
             <h5>App</h5>
             <ul>
               <li className="list-unstyled">
-                <a className="list-text" href="#!">
+                <a
+                  className="list-text"
+                  href="https://play.google.com/store/apps/details?id=com.valuecruncher.gachisaja">
                   안드로이드
                 </a>
               </li>
               <li className="list-unstyled">
-                <a className="list-text" href="#!">
+                <a className="list-text" href="https://apps.apple.com/kr/app/가치사자/id1620383583">
                   iOS
                 </a>
               </li>

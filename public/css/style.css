@@ -1,7 +1,6 @@
 @font-face {
   font-family: "yg-jalnan";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -762,17 +761,10 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1)
-    infinite both;
-  animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite
-    both;
+  -webkit-animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
-.preloader
-  .loader
-  .ytp-spinner
-  .ytp-spinner-container
-  .ytp-spinner-rotator
-  .ytp-spinner-left {
+.preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator .ytp-spinner-left {
   position: absolute;
   top: 0;
   left: 0;
@@ -780,12 +772,7 @@ hr {
   overflow: hidden;
   right: 50%;
 }
-.preloader
-  .loader
-  .ytp-spinner
-  .ytp-spinner-container
-  .ytp-spinner-rotator
-  .ytp-spinner-right {
+.preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator .ytp-spinner-right {
   position: absolute;
   top: 0;
   right: 0;
@@ -808,17 +795,14 @@ hr {
   left: 0;
   right: -100%;
   border-right-color: #ddd;
-  -webkit-animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1)
-    infinite both;
-  animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite
-    both;
+  -webkit-animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 .preloader .loader .ytp-spinner-right .ytp-spinner-circle {
   left: -100%;
   right: 0;
   border-left-color: #ddd;
-  -webkit-animation: ytp-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite
-    both;
+  -webkit-animation: ytp-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: ytp-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 @-webkit-keyframes ytp-spinner-linspin {
@@ -962,6 +946,14 @@ hr {
     width: 450px;
   }
 }
+.qr-title {
+  font-size: 15px !important;
+}
+
+.img-qr {
+  border-radius: 15px;
+}
+
 /* 최상단 */
 #header {
   background: #ffed8b;
@@ -1065,9 +1057,18 @@ hr {
   margin: 0 auto;
   margin-bottom: 10px;
 }
+
+.img-qr {
+  width: 150px;
+  margin-top: 20px;
+}
 @media only screen and (min-width: 2015px) {
   .store-box {
     width: 400px;
+  }
+  .img-qr {
+    width: 120px;
+    margin-top: 10px;
   }
   .lion-box {
     top: -145px;
@@ -1080,6 +1081,9 @@ hr {
   }
 }
 @media only screen and (min-width: 1116px) and (max-width: 1352px) {
+  .qr-title {
+    font-size: 10px !important;
+  }
   .first-area {
     padding: 100px 150px;
   }
@@ -1115,6 +1119,10 @@ hr {
   }
   .store-box {
     width: 300px;
+  }
+  .img-qr {
+    width: 150px;
+    margin-top: 5px;
   }
   .first-area .first-content img {
     width: 130px;
@@ -1160,6 +1168,10 @@ hr {
   }
   .store-box {
     width: 300px;
+  }
+  .img-qr {
+    width: 80px;
+    margin-top: 10px;
   }
   .first-area .first-content img {
     width: 130px;
@@ -1962,6 +1974,18 @@ hr {
   font-size: 19px;
 }
 
+#contact .btn-custom a {
+  color: #ffffff;
+  font-family: "Spoqa Han Sans Neo" !important;
+  font-size: 19px;
+}
+
+#contact .btn-custom a:hover {
+  color: #574c4c;
+  font-family: "Spoqa Han Sans Neo" !important;
+  font-size: 19px;
+}
+
 #contact .form-control {
   font-size: 16px;
   background-image: none;
@@ -2051,7 +2075,12 @@ hr {
     border: 1px solid #edbb3c;
     border-radius: 7px;
     color: #ffffff;
-    margin-left: 0 !important;
+    font-family: "Spoqa Han Sans Neo" !important;
+    font-size: 12px;
+    text-align: center !important;
+  }
+  #contact .btn-custom a {
+    color: #ffffff;
     font-family: "Spoqa Han Sans Neo" !important;
     font-size: 12px;
     text-align: center !important;

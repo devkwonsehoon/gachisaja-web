@@ -24,27 +24,28 @@ export const First = (props) => {
               </div>
               <div className="row download">
                 <div className="col-lg-6 col-md-12 col-12">
-                  <p className="img-qr">QR 코드 다운로드</p>
-                  <img src="img/image 11.png" className="img-qr" alt="" />{" "}
+                  <p className="img-qr-title">QR 코드 다운로드</p>
+                  <div className="d-flex col-lg-6 col-md-12 col-12">
+                    <div class="col-lg-12 col-md-12 col-12">
+                      <p className="qr-title">App Store</p>
+                      <img src="img/apple_qr.jpg" className="img-qr" alt="" />{" "}
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12">
+                      <p className="qr-title">Google Play</p>
+                      <img src="img/aos_qr.jpg" className="img-qr" alt="" />{" "}
+                    </div>
+                  </div>
                 </div>
                 <div className="col-lg-6 col-md-12 col-12">
                   <p>앱 다운로드(베타)</p>
-                  <a href="https://www.naver.com">
+                  <a href="https://play.google.com/store/apps/details?id=com.valuecruncher.gachisaja">
                     <div className="store-box">
-                      <img
-                        src="img/Google Play.png"
-                        className="down-img"
-                        alt=""
-                      />{" "}
+                      <img src="img/Google Play.png" className="down-img" alt="" />{" "}
                     </div>
                   </a>
-                  <a href="https://www.naver.com">
+                  <a href="https://apps.apple.com/kr/app/가치사자/id1620383583">
                     <div className="store-box">
-                      <img
-                        src="img/App Store.png"
-                        className="img-responsive"
-                        alt=""
-                      />{" "}
+                      <img src="img/App Store.png" className="img-responsive" alt="" />{" "}
                     </div>
                   </a>
                 </div>
